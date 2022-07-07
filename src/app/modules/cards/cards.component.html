@@ -415,7 +415,7 @@
         [bc-display-value]="true">
       </ngx-barcode6>
       <!-- <qrcode style="position: absolute !important; top: 152px;left: 140px;" [qrdata]="'Patron Id = '+ data.patron_id" [width]="50" [errorCorrectionLevel]="'M'"></qrcode> -->
-      <div class="col-md-10" style="line-height: 1.5;">
+      <div class="col-md-9" style="line-height: 1.5;">
         <div>Name: {{data.firstname}} {{data.surname}}</div>
         <div>Address: {{data.address}}</div>
         <div>Email: {{data.email}}</div>
@@ -424,13 +424,13 @@
         <div>Issued On: {{data.date_enrolled}}
         </div>
 
-        <div style="position:absolute; color:red;top:184px;right:10px;">Chief Librarian</div>
+        <div style="position:absolute; color:red;top:184px;right:20px;">Chief Librarian</div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-3" style="padding-left: 12px ! important;">
         <img height="65" src="../../../assets/pp.jpg">
         <img *ngFor='let signature of signatureImagePath' [src]="signature"
-          style="top: 170px;right: 10px;position: absolute;" height="20" />
-        <img height="60" style="top: 75px; right: 45px; position: absolute;"
+          style="top: 170px;right: 25px;position: absolute;" height="20" />
+        <img height="60" style="top: 93px; right: 48px; position: absolute;"
           *ngFor='let signature of stampImagePath' [src]="signature" />
       </div>
     </div>

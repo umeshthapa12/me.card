@@ -63,11 +63,11 @@
 
   .barcode {
     position: absolute !important;
-    top: 166px !important;
-    left: 50px !important;
+    top: 152px !important;
+    left: 90px !important;
   }
   .barcode >>> svg {
-    height: 35px !important;
+    height: 50px !important;
   }
 
   .barcode-p {
